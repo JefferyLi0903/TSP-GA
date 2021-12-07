@@ -3,7 +3,8 @@ import tsp_ga as ga
 import pandas as pd
 from random import sample
 from mpl_toolkits.basemap import Basemap
-
+import os
+os.environ['PROJ_LIB'] = r'D:\\ProgramData\\Anaconda3\\Library\\share\\basemap\\epsg'
 
 def get_genes_from(fn, sample_n=0):
     df = pd.read_csv(fn)
